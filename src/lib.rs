@@ -1,4 +1,4 @@
-extern crate regex;
+//! Utility functions to solve small word puzzles.
 
 /// Checks whether word can be written with the given letters.
 ///
@@ -42,13 +42,9 @@ pub fn build_with_letters(given_letters: &[char], word: &str) -> bool {
 pub fn search_for_words<'l, 'dict, D>(letters: &'l str, dictionary: D) -> Vec<(&'dict str, usize)>
     where D: Iterator<Item = &'dict str>
 {
-    let regex = regex::Regex::new(&format!("^[{}]+$", letters))
-                    .expect("String of given letters is malformed.");
-
     let letters = letters.trim().chars().collect::<Vec<char>>();
 
-    let mut matches = dictionary.filter(|word| regex.is_match(word))
-                                .filter(|word| build_with_letters(&letters, word))
+    let mut matches = dictionary.filter(|word| build_with_letters(&letters, word))
                                 .map(|word| (word, word.chars().count()))
                                 .collect::<Vec<(&str, usize)>>();
 
