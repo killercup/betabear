@@ -1,16 +1,19 @@
 [package]
 authors = ["Pascal Hertleif <killercup@gmail.com>"]
-name = "betabear"
-version = "0.1.1"
-license = "MIT OR Apache-2.0"
 description = "Look for words that can be built with a list of given letters."
+homepage = "https://github.com/killercup/betabear.git"
+license = "MIT OR Apache-2.0"
+name = "betabear"
 readme = "README.md"
 repository = "https://github.com/killercup/betabear.git"
-homepage = "https://github.com/killercup/betabear.git"
+version = "0.1.1"
 
 [[bin]]
-name = "betabear"
 doc = false
+name = "betabear"
+
+[dependencies]
+lines = "0.0.4"
 
 [dev-dependencies]
 regex = "0.1.48"
