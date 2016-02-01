@@ -2,7 +2,7 @@
 
 A simple CLI tool to find words that can be built with a given list of letters.
 
-[![Build Status](https://travis-ci.org/killercup/betabear.svg)](https://travis-ci.org/killercup/betabear)
+[![Build Status](https://travis-ci.org/killercup/betabear.svg?branch=master)](https://travis-ci.org/killercup/betabear)
 
 [Library documentation](http://killercup.github.io/betabear/)
 
