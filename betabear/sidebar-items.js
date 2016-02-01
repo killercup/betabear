@@ -1,0 +1,1 @@
+initSidebarItems({"fn":[["build_with_letters","Checks whether word can be written with the given letters."],["search_for_words","Filter dictionary by words that can be written with the given letters"]]});
